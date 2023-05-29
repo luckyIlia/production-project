@@ -4,11 +4,13 @@ describe('classNames', () => {
     test('with only first param', () => {
         expect(classNames('someClass')).toBe('someClass');
     });
+
     test('with additional class', () => {
         const expected = 'someClass class1 class2';
-        // eslint-disable-next-line max-len
-        expect(classNames('someClass', {}, ['class1', 'class2'])).toBe(expected);
+        expect(classNames('someClass', {}, ['class1', 'class2']))
+            .toBe(expected);
     });
+
     test('with mods', () => {
         const expected = 'someClass class1 class2 hovered scrollable';
         expect(classNames(
@@ -17,6 +19,7 @@ describe('classNames', () => {
             ['class1', 'class2'],
         )).toBe(expected);
     });
+
     test('with mods false', () => {
         const expected = 'someClass class1 class2 hovered';
         expect(classNames(
@@ -25,6 +28,7 @@ describe('classNames', () => {
             ['class1', 'class2'],
         )).toBe(expected);
     });
+
     test('with mods undefined', () => {
         const expected = 'someClass class1 class2 hovered';
         expect(classNames(
