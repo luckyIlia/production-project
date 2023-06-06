@@ -49,6 +49,8 @@ module.exports = {
             },
         ],
         'max-len': ['error', { ignoreComments: true, code: 100 }],
+        'jsx-ally/no-static-element-interactions': 'off',
+        'jsx-ally/click-events-have-key-events': 'off',
     },
     globals: {
         __IS_DEV__: true,
