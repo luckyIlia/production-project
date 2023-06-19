@@ -3,6 +3,8 @@
     " Aperiam consectetur illum in quam rem? Quas quasi sequi tempore tenetur veniam!": " Aperiam consectetur illum in quam rem? Quas quasi sequi tempore tenetur veniam!"
   },
   "throw error": "throw error",
+  "Введите username": "Введите username",
+  "Введите пароль": "Введите пароль",
   "Войти": "Войти",
   "Главная": "Главная",
   "Главная страница": "Главная страница",
@@ -12,7 +14,5 @@
   "Переключить": "Переключить",
   "Произошла непредвиденная ошибка": "Произошла непредвиденная ошибка",
   "Страница не найдена": "Страница не найдена",
-  "Язык": "Язык",
-  "Введите username": "Введите username",
-  "Введите пароль": "Введите пароль"
+  "Язык": "Язык"
 }
