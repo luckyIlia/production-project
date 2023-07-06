@@ -12,5 +12,14 @@
       "password": "123"
     }
   ],
-  "profile": { "name": "typicode" }
+  "profile": {
+    "first": "test",
+    "lastname": "test",
+    "age": 25,
+    "currency": "RUB",
+    "country": "Russia",
+    "city": "Moscow",
+    "username": "admin",
+    "avatar": "https://pic.onlinewebfonts.com/svg/img_569204.png"
+  }
 }
