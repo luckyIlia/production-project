@@ -98,7 +98,8 @@
     {
       "id": "1",
       "username": "admin",
-      "password": "123"
+      "password": "123",
+      "avatar": "https://pic.onlinewebfonts.com/svg/img_569204.png"
     }
   ],
   "profile": {
