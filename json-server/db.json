@@ -102,14 +102,28 @@
       "avatar": "https://pic.onlinewebfonts.com/svg/img_569204.png"
     }
   ],
-  "profile": {
-    "first": "test",
-    "lastname": "test",
-    "age": 25,
-    "currency": "RUB",
-    "country": "Russia",
-    "city": "Moscow",
-    "username": "admin",
-    "avatar": "https://pic.onlinewebfonts.com/svg/img_569204.png"
-  }
+  "profile": [
+    {
+      "id": "1",
+      "first": "test",
+      "lastname": "test",
+      "age": 25,
+      "currency": "RUB",
+      "country": "Russia",
+      "city": "Moscow",
+      "username": "admin",
+      "avatar": "https://pic.onlinewebfonts.com/svg/img_569204.png"
+    },
+    {
+      "id": "2",
+      "first": "test2",
+      "lastname": "test",
+      "age": 25,
+      "currency": "RUB",
+      "country": "Armenia",
+      "city": "Erevan",
+      "username": "admin123",
+      "avatar": "https://logopond.com/logos/f769ca74308454b8105edd767151818e.png"
+    }
+  ]
 }
