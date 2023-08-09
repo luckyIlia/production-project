@@ -8,9 +8,9 @@ import { Article, ArticleView } from '../../model/types/article';
 
 interface ArticleListProps {
     className?: string;
-    articles: Article[];
+    articles: Article[]
     isLoading?: boolean;
-    view?: ArticleView
+    view?: ArticleView;
 }
 
 const getSkeletons = (view: ArticleView) => new Array(view === ArticleView.SMALL ? 9 : 3)

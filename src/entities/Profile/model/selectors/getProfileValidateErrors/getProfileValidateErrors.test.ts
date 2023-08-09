@@ -1,20 +1,9 @@
 import { StateSchema } from 'app/providers/StoreProvider';
-import { Country } from 'entities/Country';
-import { Currency } from 'entities/Currency';
 import { ValidateProfileError } from 'entities/Profile';
-import { getProfileValidateErrors } from './getProfileValidateError';
+import { getProfileValidateErrors } from './getProfileValidateErrors';
 
 describe('getProfileValidateErrors.test', () => {
     test('should work with filled state', () => {
-        const data = {
-            username: 'admin',
-            age: 22,
-            country: Country.Russia,
-            lastname: 'james',
-            first: 'bob',
-            city: 'asd',
-            currency: Currency.EUR,
-        };
         const state: DeepPartial<StateSchema> = {
             profile: {
                 validateErrors: [

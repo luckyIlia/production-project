@@ -13,5 +13,4 @@ export default {
 const Template: ComponentStory<typeof CurrencySelect> = (args) => <CurrencySelect {...args} />;
 
 export const Primary = Template.bind({});
-Primary.args = {
-};
+Primary.args = {};

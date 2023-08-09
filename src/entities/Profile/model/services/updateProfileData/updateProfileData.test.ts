@@ -7,11 +7,11 @@ import { updateProfileData } from './updateProfileData';
 const data = {
     username: 'admin',
     age: 22,
-    country: Country.Russia,
-    lastname: 'james',
-    first: 'bob',
-    city: 'asd',
-    currency: Currency.EUR,
+    country: Country.Ukraine,
+    lastname: 'ulbi tv',
+    first: 'asd',
+    city: 'asf',
+    currency: Currency.USD,
     id: '1',
 };
 
@@ -39,6 +39,7 @@ describe('updateProfileData.test', () => {
             },
         });
         thunk.api.put.mockReturnValue(Promise.resolve({ status: 403 }));
+
         const result = await thunk.callThunk();
 
         expect(result.meta.requestStatus).toBe('rejected');

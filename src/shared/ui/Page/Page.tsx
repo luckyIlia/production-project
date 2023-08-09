@@ -21,6 +21,7 @@ export const Page = memo((props: PageProps) => {
         wrapperRef,
         callback: onScrollEnd,
     });
+
     return (
         <section
             ref={wrapperRef}

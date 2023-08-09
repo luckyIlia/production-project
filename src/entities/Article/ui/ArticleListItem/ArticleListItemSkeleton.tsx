@@ -3,7 +3,7 @@ import { memo } from 'react';
 import { Card } from 'shared/ui/Card/Card';
 import { Skeleton } from 'shared/ui/Skeleton/Skeleton';
 import cls from './ArticleListItem.module.scss';
-import { ArticleView } from '../../model/types/Article';
+import { ArticleView } from '../../model/types/article';
 
 interface ArticleListItemSkeletonProps {
     className?: string;
@@ -11,10 +11,7 @@ interface ArticleListItemSkeletonProps {
 }
 
 export const ArticleListItemSkeleton = memo((props: ArticleListItemSkeletonProps) => {
-    const {
-        className,
-        view,
-    } = props;
+    const { className, view } = props;
 
     if (view === ArticleView.BIG) {
         return (
@@ -26,7 +23,7 @@ export const ArticleListItemSkeleton = memo((props: ArticleListItemSkeletonProps
                         <Skeleton width={150} height={16} className={cls.date} />
                     </div>
                     <Skeleton width={250} height={24} className={cls.title} />
-                    <Skeleton className={cls.img} />
+                    <Skeleton height={200} className={cls.img} />
                     <div className={cls.footer}>
                         <Skeleton height={36} width={200} />
                     </div>

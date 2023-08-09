@@ -8,11 +8,11 @@ describe('getProfileForm.test', () => {
         const data = {
             username: 'admin',
             age: 22,
-            country: Country.Russia,
-            lastname: 'james',
-            first: 'bob',
-            city: 'asd',
-            currency: Currency.EUR,
+            country: Country.Ukraine,
+            lastname: 'ulbi tv',
+            first: 'asd',
+            city: 'asf',
+            currency: Currency.USD,
         };
         const state: DeepPartial<StateSchema> = {
             profile: {

@@ -29,7 +29,6 @@ interface ArticleDetailsProps {
 }
 
 const reducers: ReducersList = {
-    // @ts-ignore
     articleDetails: articleDetailsReducer,
 };
 

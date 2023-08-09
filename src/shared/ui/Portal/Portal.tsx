@@ -1,7 +1,5 @@
-import { classNames } from 'shared/lib/classNames/classNames';
 import { ReactNode } from 'react';
 import { createPortal } from 'react-dom';
-import cls from './Portal.module.scss';
 
 interface PortalProps {
     children: ReactNode;
@@ -13,5 +11,6 @@ export const Portal = (props: PortalProps) => {
         children,
         element = document.body,
     } = props;
+
     return createPortal(children, element);
 };

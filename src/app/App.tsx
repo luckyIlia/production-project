@@ -11,16 +11,18 @@ function App() {
     const { theme } = useTheme();
     const dispatch = useDispatch();
     const inited = useSelector(getUserInited);
+
     useEffect(() => {
         dispatch(userActions.initAuthData());
     }, [dispatch]);
+
     return (
         <div className={classNames('app', {}, [theme])}>
             <Suspense fallback="">
                 <Navbar />
                 <div className="content-page">
                     <Sidebar />
-                    {inited && <AppRouter /> }
+                    {inited && <AppRouter />}
                 </div>
             </Suspense>
         </div>

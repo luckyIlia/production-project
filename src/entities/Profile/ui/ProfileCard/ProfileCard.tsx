@@ -3,12 +3,13 @@ import { useTranslation } from 'react-i18next';
 import { Text, TextAlign, TextTheme } from 'shared/ui/Text/Text';
 import { Input } from 'shared/ui/Input/Input';
 import { Loader } from 'shared/ui/Loader/Loader';
-import { Profile } from 'entities/Profile';
 import { Avatar } from 'shared/ui/Avatar/Avatar';
-import { Currency, CurrencySelect } from 'entities/Currency';
+import { Currency } from 'entities/Currency/model/types/currency';
+import { CurrencySelect } from 'entities/Currency';
 import { Country } from 'entities/Country/model/types/country';
-import { CountrySelect } from 'entities/Country/ui/CountrySelect/CountrySelect';
+import { CountrySelect } from 'entities/Country';
 import cls from './ProfileCard.module.scss';
+import { Profile } from '../../model/types/profile';
 
 interface ProfileCardProps {
     className?: string;
@@ -16,14 +17,14 @@ interface ProfileCardProps {
     error?: string;
     isLoading?: boolean;
     readonly?: boolean;
-    onChangeFirstname?: (value?: string) => void;
     onChangeLastname?: (value?: string) => void;
-    onChangeAge?: (value?: string) => void;
+    onChangeFirstname?: (value?: string) => void;
     onChangeCity?: (value?: string) => void;
+    onChangeAge?: (value?: string) => void;
     onChangeUsername?: (value?: string) => void;
     onChangeAvatar?: (value?: string) => void;
-    onChangeCurrency?: (currency?: Currency) => void;
-    onChangeCountry?: (country?: Country) => void;
+    onChangeCurrency?: (currency: Currency) => void;
+    onChangeCountry?: (country: Country) => void;
 }
 
 export const ProfileCard = (props: ProfileCardProps) => {
@@ -37,10 +38,10 @@ export const ProfileCard = (props: ProfileCardProps) => {
         onChangeLastname,
         onChangeAge,
         onChangeCity,
-        onChangeUsername,
         onChangeAvatar,
-        onChangeCurrency,
+        onChangeUsername,
         onChangeCountry,
+        onChangeCurrency,
     } = props;
     const { t } = useTranslation('profile');
 

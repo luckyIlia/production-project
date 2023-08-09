@@ -10,7 +10,7 @@ export enum ButtonTheme {
     OUTLINE = 'outline',
     OUTLINE_RED = 'outline_red',
     BACKGROUND = 'background',
-    BACKGROUND_INVERTED = 'backgroundInverted'
+    BACKGROUND_INVERTED = 'backgroundInverted',
 }
 
 export enum ButtonSize {
@@ -28,7 +28,7 @@ interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement>{
     children?: ReactNode;
 }
 
-export const Button: FC<ButtonProps> = memo((props: ButtonProps) => {
+export const Button = memo((props: ButtonProps) => {
     const {
         className,
         children,

@@ -13,10 +13,12 @@ export const Avatar = ({
     className, src, size, alt,
 }: AvatarProps) => {
     const mods: Mods = {};
+
     const styles = useMemo<CSSProperties>(() => ({
         width: size || 100,
         height: size || 100,
     }), [size]);
+
     return (
         <img
             src={src}

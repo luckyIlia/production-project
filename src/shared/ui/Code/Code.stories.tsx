@@ -23,5 +23,7 @@ Normal.args = {
         + '    },\n'
         + '} as ComponentMeta<typeof Code>;\n'
         + '\n'
-        + 'const Template: ComponentStory<typeof Code> = (args) => <Code {...args} />;',
+        + 'const Template: ComponentStory<typeof Code> = (args) => <Code {...args} />;\n'
+        + '\n'
+        + 'export const Normal = Template.bind({});',
 };

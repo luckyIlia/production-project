@@ -16,12 +16,10 @@ export const Navbar = memo(({ className }: NavbarProps) => {
     const [isAuthModal, setIsAuthModal] = useState(false);
     const authData = useSelector(getUserAuthData);
     const dispatch = useDispatch();
-    const onCloseModal = useCallback(
-        () => {
-            setIsAuthModal(false);
-        },
-        [],
-    );
+
+    const onCloseModal = useCallback(() => {
+        setIsAuthModal(false);
+    }, []);
 
     const onShowModal = useCallback(() => {
         setIsAuthModal(true);
@@ -30,6 +28,7 @@ export const Navbar = memo(({ className }: NavbarProps) => {
     const onLogout = useCallback(() => {
         dispatch(userActions.logout());
     }, [dispatch]);
+
     if (authData) {
         return (
             <header className={classNames(cls.Navbar, {}, [className])}>
@@ -43,6 +42,7 @@ export const Navbar = memo(({ className }: NavbarProps) => {
             </header>
         );
     }
+
     return (
         <header className={classNames(cls.Navbar, {}, [className])}>
             <Button
