@@ -6,7 +6,7 @@ import { ProfilePage } from 'pages/ProfilePage';
 import ArticlesPage from 'pages/ArticlesPage/ui/ArticlesPage/ArticlesPage';
 import { ArticleDetailsPage } from 'pages/ArticleDetailsPage';
 
-export type AppRouteProps = RouteProps & {
+export type AppRoutesProps = RouteProps & {
     authOnly?: boolean;
 }
 
@@ -30,7 +30,7 @@ export const RoutePath: Record<AppRoutes, string> = {
     [AppRoutes.NOT_FOUND]: '*',
 };
 
-export const routeConfig: Record<AppRoutes, AppRouteProps> = {
+export const routeConfig: Record<AppRoutes, AppRoutesProps> = {
     [AppRoutes.MAIN]: {
         path: RoutePath.main,
         element: <MainPage />,
