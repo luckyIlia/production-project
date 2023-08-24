@@ -9,6 +9,7 @@ export const getCanEditArticle = createSelector(
         if (!article || !user) {
             return false;
         }
+
         return article.user.id === user.id;
     },
 );

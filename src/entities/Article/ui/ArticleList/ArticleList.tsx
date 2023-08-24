@@ -11,7 +11,7 @@ interface ArticleListProps {
     className?: string;
     articles: Article[]
     isLoading?: boolean;
-    target?: HTMLAttributeAnchorTarget
+    target?: HTMLAttributeAnchorTarget;
     view?: ArticleView;
 }
 
@@ -26,8 +26,8 @@ export const ArticleList = memo((props: ArticleListProps) => {
         className,
         articles,
         view = ArticleView.SMALL,
-        target,
         isLoading,
+        target,
     } = props;
     const { t } = useTranslation();
 

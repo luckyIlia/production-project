@@ -29,8 +29,8 @@ export const RoutePath: Record<AppRoutes, string> = {
     [AppRoutes.PROFILE]: '/profile/', // + :id
     [AppRoutes.ARTICLES]: '/articles',
     [AppRoutes.ARTICLE_DETAILS]: '/articles/', // + :id
-    [AppRoutes.ARTICLE_CREATE]: '/articles/new', // + :id
-    [AppRoutes.ARTICLE_EDIT]: '/article_edit/:id/edit', // + :id
+    [AppRoutes.ARTICLE_CREATE]: '/articles/new',
+    [AppRoutes.ARTICLE_EDIT]: '/articles/:id/edit',
     // последний
     [AppRoutes.NOT_FOUND]: '*',
 };
@@ -60,12 +60,12 @@ export const routeConfig: Record<AppRoutes, AppRoutesProps> = {
         authOnly: true,
     },
     [AppRoutes.ARTICLE_CREATE]: {
-        path: `${RoutePath.article_create}:id`,
+        path: `${RoutePath.article_create}`,
         element: <ArticleEditPage />,
         authOnly: true,
     },
     [AppRoutes.ARTICLE_EDIT]: {
-        path: `${RoutePath.article_edit}:id`,
+        path: `${RoutePath.article_edit}`,
         element: <ArticleEditPage />,
         authOnly: true,
     },
