@@ -22,7 +22,7 @@ import {
     getArticleDetailsError,
     getArticleDetailsIsLoading,
 } from '../../model/selectors/articleDetails';
-import { ArticleBlock, ArticleBlockType } from '../../model/types/article';
+import { ArticleBlock, ArticleBlockType } from '../../model/types/Article';
 
 interface ArticleDetailsProps {
     className?: string;

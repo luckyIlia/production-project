@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next';
 import { memo } from 'react';
 import { Code } from 'shared/ui/Code/Code';
 import cls from './ArticleCodeBlockComponent.module.scss';
-import { ArticleCodeBlock } from '../../model/types/article';
+import { ArticleCodeBlock } from '../../model/types/Article';
 
 interface ArticleCodeBlockComponentProps {
     className?: string;
