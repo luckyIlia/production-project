@@ -7,6 +7,7 @@ import { CommentList } from 'entities/Comment';
 import { useDispatch, useSelector } from 'react-redux';
 import { useInitialEffect } from 'shared/lib/hooks/useInitialEffect/useInitialEffect';
 import { VStack } from 'shared/ui/Stack';
+import { Loader } from 'shared/ui/Loader/Loader';
 import {
     fetchCommentsByArticleId,
 } from '../../model/services/fetchCommentsByArticleId/fetchCommentsByArticleId';
@@ -39,7 +40,7 @@ export const ArticleDetailsCommets = memo((props: ArticleDetailsCommetsProps) =>
                 size={TextSize.L}
                 title={t('Комментарии')}
             />
-            <Suspense fallback={<div>...</div>}>
+            <Suspense fallback={<Loader />}>
                 <AddCommentForm onSendComment={onSendComment} />
             </Suspense>
             <CommentList
