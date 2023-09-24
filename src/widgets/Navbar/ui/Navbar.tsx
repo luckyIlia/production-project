@@ -21,7 +21,6 @@ export const Navbar = memo(({ className }: NavbarProps) => {
     const { t } = useTranslation();
     const [isAuthModal, setIsAuthModal] = useState(false);
     const authData = useSelector(getUserAuthData);
-
     const onCloseModal = useCallback(() => {
         setIsAuthModal(false);
     }, []);
@@ -29,7 +28,6 @@ export const Navbar = memo(({ className }: NavbarProps) => {
     const onShowModal = useCallback(() => {
         setIsAuthModal(true);
     }, []);
-
     if (authData) {
         return (
             <header className={classNames(cls.Navbar, {}, [className])}>
@@ -46,6 +44,7 @@ export const Navbar = memo(({ className }: NavbarProps) => {
                     {t('Создать статью')}
                 </AppLink>
                 <HStack gap="16" className={cls.actions}>
+
                     <NotificationButton />
                     <AvatarDropdown />
                 </HStack>
