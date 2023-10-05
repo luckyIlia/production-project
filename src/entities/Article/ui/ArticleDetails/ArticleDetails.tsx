@@ -22,7 +22,7 @@ import {
     getArticleDetailsError,
     getArticleDetailsIsLoading,
 } from '../../model/selectors/articleDetails';
-import { ArticleBlock } from '../../model/types/Article';
+import { ArticleBlock } from '../../model/types/article';
 import { ArticleBlockType } from '../../model/consts/articleConsts';
 
 interface ArticleDetailsProps {

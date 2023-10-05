@@ -18,14 +18,16 @@ interface DropdownProps {
     className?: string;
     items: DropdownItem[];
     direction?: DropdownDirection;
-    trigger?: ReactNode;
+    trigger: ReactNode;
 }
 
 export function Dropdown(props: DropdownProps) {
     const {
-        className, items, trigger, direction = 'bottom right',
+        className, trigger, items, direction = 'bottom right',
     } = props;
+
     const menuClasses = [mapDirectionClass[direction]];
+
     return (
         <Menu as="div" className={classNames(cls.Dropdown, {}, [className, popupCls.popup])}>
             <Menu.Button className={popupCls.trigger}>
@@ -36,13 +38,14 @@ export function Dropdown(props: DropdownProps) {
                     const content = ({ active }: {active: boolean}) => (
                         <button
                             type="button"
-                            onClick={item.onClick}
                             disabled={item.disabled}
+                            onClick={item.onClick}
                             className={classNames(cls.item, { [popupCls.active]: active })}
                         >
                             {item.content}
                         </button>
                     );
+
                     if (item.href) {
                         return (
                             <Menu.Item as={AppLink} to={item.href} disabled={item.disabled}>
@@ -50,6 +53,7 @@ export function Dropdown(props: DropdownProps) {
                             </Menu.Item>
                         );
                     }
+
                     return (
                         <Menu.Item as={Fragment} disabled={item.disabled}>
                             {content}

@@ -20,8 +20,8 @@ export const Normal = Template.bind({});
 Normal.args = {
     value: '123',
     items: [
-        { content: '12wewew3', value: '123' },
-        { content: '12weweewew3', value: '12233' },
+        { content: '1asfasfasf23', value: '123' },
+        { content: '1asfasfasf21233', value: '1232' },
     ],
 };
 
@@ -30,8 +30,8 @@ topLeft.args = {
     direction: 'top left',
     value: '123',
     items: [
-        { content: '12wewew3', value: '123' },
-        { content: '12weweewew3', value: '12233' },
+        { content: '1asfasfasf23', value: '123' },
+        { content: '1asfasfasf21233', value: '1232' },
     ],
 };
 
@@ -40,8 +40,8 @@ topRight.args = {
     direction: 'top right',
     value: '123',
     items: [
-        { content: '12wewew3', value: '123' },
-        { content: '12weweewew3', value: '12233' },
+        { content: '1asfasfasf23', value: '123' },
+        { content: '1asfasfasf21233', value: '1232' },
     ],
 };
 
@@ -50,8 +50,8 @@ bottomLeft.args = {
     direction: 'bottom left',
     value: '123',
     items: [
-        { content: '12wewew3', value: '123' },
-        { content: '12weweewew3', value: '12233' },
+        { content: '1asfasfasf23', value: '123' },
+        { content: '1asfasfasf21233', value: '1232' },
     ],
 };
 
@@ -60,7 +60,7 @@ bottomRight.args = {
     direction: 'bottom right',
     value: '123',
     items: [
-        { content: '12wewew3', value: '123' },
-        { content: '12weweewew3', value: '12233' },
+        { content: '1asfasfasf23', value: '123' },
+        { content: '1asfasfasf21233', value: '1232' },
     ],
 };
