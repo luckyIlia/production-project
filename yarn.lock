@@ -7416,10 +7416,10 @@
     "language-tags" "^1.0.5"
     "minimatch" "^3.0.4"
 
-"eslint-plugin-luckyilia-plugin@^0.0.3":
-  "integrity" "sha512-OQV4rBPgQK/0qbGXOoLXlfp+zq1uzObFn+s6kZyK/EQeFw91aun0Rscxcg1pw4hr2qY1eCAAsNqFA3dlxfDv6A=="
-  "resolved" "https://registry.npmjs.org/eslint-plugin-luckyilia-plugin/-/eslint-plugin-luckyilia-plugin-0.0.3.tgz"
-  "version" "0.0.3"
+"eslint-plugin-luckyilia-plugin@^0.0.4":
+  "integrity" "sha512-PteE0As2UMqNCzOAYdRgeTqEIHX0KP2vDg9N5TahcPy6zflrWfhsNGDtQ/ojZYQI82tSJhKRCH+g0fH+CR5pkQ=="
+  "resolved" "https://registry.npmjs.org/eslint-plugin-luckyilia-plugin/-/eslint-plugin-luckyilia-plugin-0.0.4.tgz"
+  "version" "0.0.4"
   dependencies:
     "requireindex" "^1.2.0"
 

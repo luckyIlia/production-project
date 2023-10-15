@@ -70,6 +70,7 @@ module.exports = {
         'react/no-array-index-key': 'off',
         'arrow-body-style': 'off',
         'luckyilia-plugin/path-checker': ['error', { alias: '@' }],
+        'luckyilia-plugin/public-api-imports': ['error', { alias: '@' }],
     },
     globals: {
         __IS_DEV__: true,
