@@ -48,15 +48,16 @@ module.exports = {
             {
                 markupOnly: true,
                 ignoreAttribute: [
+                    'as',
                     'role',
                     'data-testid',
-                    'to', 'as',
+                    'to',
                     'target',
                     'justify',
                     'align',
+                    'border',
                     'direction',
                     'gap',
-                    'border',
                 ],
             },
         ],
@@ -64,13 +65,19 @@ module.exports = {
         'jsx-a11y/no-static-element-interactions': 'off',
         'jsx-a11y/click-events-have-key-events': 'off',
         'react-hooks/rules-of-hooks': 'error', // Checks rules of Hooks
-        'react-hooks/exhaustive-deps': 'error', // Checks effect dependencies
+        'react-hooks/exhaustive-deps': 'error', // Checks effect dependencies,
         'no-param-reassign': 'off',
         'no-undef': 'off',
         'react/no-array-index-key': 'off',
         'arrow-body-style': 'off',
         'luckyilia-plugin/path-checker': ['error', { alias: '@' }],
-        'luckyilia-plugin/public-api-imports': ['error', { alias: '@' }],
+        'luckyilia-plugin/public-api-imports': [
+            'error',
+            {
+                alias: '@',
+                testFilesPatterns: ['**/*.test.*', '**/*.story.*', '**/StoreDecorator.tsx'],
+            },
+        ],
     },
     globals: {
         __IS_DEV__: true,
