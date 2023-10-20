@@ -71,6 +71,13 @@ module.exports = {
         'react/no-array-index-key': 'off',
         'arrow-body-style': 'off',
         'luckyilia-plugin/path-checker': ['error', { alias: '@' }],
+        'luckyilia-plugin/layer-imports': [
+            'error',
+            {
+                alias: '@',
+                ignoreImportPatterns: ['**/StoreProvider', '**/testing'],
+            },
+        ],
         'luckyilia-plugin/public-api-imports': [
             'error',
             {
