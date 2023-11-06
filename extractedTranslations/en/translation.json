@@ -1,5 +1,6 @@
 {
   "John Doe": "John Doe",
+  "add 5": "add 5",
   "decrement": "",
   "increment": "",
   "throw error": "throw error",
@@ -76,6 +77,5 @@
   "названию": "",
   "по": "",
   "просмотрам": "",
-  "убыванию": "",
-  "add 5": "add 5"
+  "убыванию": ""
 }
