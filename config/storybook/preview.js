@@ -1,14 +1,14 @@
-import { addDecorator } from '@storybook/react';
-import { StyleDecorator } from '../../src/shared/config/storybook/StyleDecorator/StyleDecorator';
-import { ThemeDecorator } from '../../src/shared/config/storybook/ThemeDecorator/ThemeDecorator';
-import { RouterDecorator } from '../../src/shared/config/storybook/RouterDecorator/RouterDecorator';
-import {
-    SuspenseDecorator,
-} from '../../src/shared/config/storybook/SuspenseDecorator/SuspenseDecorator';
 import { Theme } from '../../src/shared/const/theme';
+import { StyleDecorator } from '@/shared/config/storybook/StyleDecorator/StyleDecorator';
+import { ThemeDecorator } from '@/shared/config/storybook/ThemeDecorator/ThemeDecorator';
+import { RouterDecorator } from '@/shared/config/storybook/RouterDecorator/RouterDecorator';
+import { SuspenseDecorator } from '@/shared/config/storybook/SuspenseDecorator/SuspenseDecorator';
 
 export const parameters = {
     actions: { argTypesRegex: '^on[A-Z].*' },
+    previewTabs: {
+        'storybook/docs/panel': { hidden: true }
+    },
     controls: {
         matchers: {
             color: /(background|color)$/i,
@@ -26,7 +26,4 @@ export const parameters = {
     },
 };
 
-addDecorator(StyleDecorator);
-addDecorator(ThemeDecorator(Theme.LIGHT));
-addDecorator(RouterDecorator);
-addDecorator(SuspenseDecorator);
+export const decorators = [StyleDecorator, ThemeDecorator(Theme.LIGHT), RouterDecorator, SuspenseDecorator];
