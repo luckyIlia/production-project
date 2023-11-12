@@ -130,6 +130,7 @@
     "react-router-dom": "^6.2.1"
   },
   "loki": {
+    "chromeSelector": "#storybook-root > *",
     "configurations": {
       "chrome.laptop": {
         "target": "chrome.docker",

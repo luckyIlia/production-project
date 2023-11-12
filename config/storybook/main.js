@@ -24,4 +24,7 @@ module.exports = {
     docs: {
         autodocs: true,
     },
+    features: {
+        storyStoreV7: !global.navigator?.userAgent?.match?.('jsdom'),
+    },
 };
