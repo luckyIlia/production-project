@@ -597,6 +597,13 @@
       "password": "123",
       "roles": ["MANAGER"],
       "avatar": "https://pic.onlinewebfonts.com/svg/img_569204.png"
+    },
+    {
+      "id": "4",
+      "username": "testuser",
+      "password": "123",
+      "roles": ["ADMIN"],
+      "avatar": "https://pic.onlinewebfonts.com/svg/img_569204.png"
     }
   ],
   "profile": [
