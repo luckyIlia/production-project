@@ -628,6 +628,28 @@
       "city": "Erevan",
       "username": "admin123",
       "avatar": "https://logopond.com/logos/f769ca74308454b8105edd767151818e.png"
+    },
+    {
+      "id": "3",
+      "first": "test3",
+      "lastname": "test",
+      "age": 25,
+      "currency": "RUB",
+      "country": "Armenia",
+      "city": "Erevan",
+      "username": "admin123",
+      "avatar": "https://logopond.com/logos/f769ca74308454b8105edd767151818e.png"
+    },
+    {
+      "id": "4",
+      "first": "test",
+      "lastname": "user",
+      "age": 25,
+      "currency": "RUB",
+      "country": "Russia",
+      "city": "testuser",
+      "username": "admin123",
+      "avatar": "https://logopond.com/logos/f769ca74308454b8105edd767151818e.png"
     }
   ],
   "article-ratings": [
