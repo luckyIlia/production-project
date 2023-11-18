@@ -6806,10 +6806,10 @@
     "language-tags" "^1.0.5"
     "minimatch" "^3.0.4"
 
-"eslint-plugin-luckyilia-plugin@^0.0.7":
-  "integrity" "sha512-dNZPBI7rKcP3Czh9l2F24d4ZB6OwScqbqeWCK+OYQ9Wy7le/cdfLEkWyiChOfXB8HejbU8PX8LU5Ri2GHLsrLg=="
-  "resolved" "https://registry.npmjs.org/eslint-plugin-luckyilia-plugin/-/eslint-plugin-luckyilia-plugin-0.0.7.tgz"
-  "version" "0.0.7"
+"eslint-plugin-luckyilia-plugin@^0.0.8":
+  "integrity" "sha512-mA02h6RD7Ad8cMz4hvp5jCVS9ilGBKAECbhgGjqNLMWGjGD2qZ/CM81SGG3/PQ2ffih/a+HZfLGEqdvzf/bSFA=="
+  "resolved" "https://registry.npmjs.org/eslint-plugin-luckyilia-plugin/-/eslint-plugin-luckyilia-plugin-0.0.8.tgz"
+  "version" "0.0.8"
   dependencies:
     "requireindex" "^1.2.0"
 

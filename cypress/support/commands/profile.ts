@@ -16,7 +16,7 @@ export const resetProfile = (profileId: string) => {
             lastname: 'user',
             age: 465,
             currency: 'EUR',
-            country: 'Ukraine',
+            country: 'Russia',
             city: 'Moscow',
             username: 'testuser',
             avatar: 'https://xakep.ru/wp-content/uploads/2018/05/171485/KuroiSH-hacker.jpg',
