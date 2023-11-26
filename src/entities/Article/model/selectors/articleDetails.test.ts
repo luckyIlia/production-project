@@ -46,4 +46,33 @@ describe("articleDetails.test", () => {
     const state: DeepPartial<StateSchema> = {};
     expect(getArticleDetailsIsLoading(state as StateSchema)).toEqual(false);
   });
+  test("should handle different data types for data", () => {
+    const state: DeepPartial<StateSchema> = {
+      articleDetails: {
+        // @ts-ignore
+        data: 0, // Different data type (number)
+      },
+    };
+    expect(getArticleDetailsData(state as StateSchema)).toEqual(0);
+  });
+
+  test("should handle different data types for isLoading", () => {
+    const state: DeepPartial<StateSchema> = {
+      articleDetails: {
+        // @ts-ignore
+        isLoading: null, // Different data type (null)
+      },
+    };
+    expect(getArticleDetailsIsLoading(state as StateSchema)).toEqual(null);
+  });
+
+  test("should handle different data types for error", () => {
+    const state: DeepPartial<StateSchema> = {
+      articleDetails: {
+        // @ts-ignore
+        error: [], // Different data type (array)
+      },
+    };
+    expect(getArticleDetailsError(state as StateSchema)).toEqual([]);
+  });
 });
