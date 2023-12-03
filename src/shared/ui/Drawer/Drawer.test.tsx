@@ -34,6 +34,4 @@ describe('DrawerContent component', () => {
         fireEvent.click(getByTestId('overlay'));
         expect(onCloseMock).toHaveBeenCalledTimes(1);
     });
-
-    // Add more test cases for specific functionality and edge cases as needed
 });
