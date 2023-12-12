@@ -1,5 +1,5 @@
 import React from 'react';
-import { StoryFn, Meta } from '@storybook/react';
+import { ComponentStory, ComponentMeta } from '@storybook/react';
 
 import ArticlesPage from './ArticlesPage';
 
@@ -9,9 +9,9 @@ export default {
     argTypes: {
         backgroundColor: { control: 'color' },
     },
-} as Meta<typeof ArticlesPage>;
+} as ComponentMeta<typeof ArticlesPage>;
 
-const Template: StoryFn<typeof ArticlesPage> = (args) => (
+const Template: ComponentStory<typeof ArticlesPage> = (args) => (
     <ArticlesPage {...args} />
 );
 

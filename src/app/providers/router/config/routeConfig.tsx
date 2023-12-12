@@ -11,15 +11,12 @@ import { NotFoundPage } from "@/pages/NotFoundPage";
 import {
   AppRoutes,
   getRouteAbout,
-  getRouteAdmin,
+  getRouteAdmin, getRouteArticleCreate, getRouteArticleDetails, getRouteArticleEdit,
   getRouteArticles,
-  getRouteArticlesCreate,
-  getRouteArticlesDetails,
-  getRouteArticlesEdit,
   getRouteForbidden,
   getRouteMain,
   getRouteProfile,
-} from "@/shared/const/router";
+} from '@/shared/const/router';
 import { AppRoutesProps } from "@/shared/types/router";
 
 export const routeConfig: Record<AppRoutes, AppRoutesProps> = {
@@ -42,17 +39,17 @@ export const routeConfig: Record<AppRoutes, AppRoutesProps> = {
     authOnly: true,
   },
   [AppRoutes.ARTICLE_DETAILS]: {
-    path: getRouteArticlesDetails(":id"), // + :i,
+    path: getRouteArticleDetails(":id"), // + :i,
     element: <ArticleDetailsPage />,
     authOnly: true,
   },
   [AppRoutes.ARTICLE_CREATE]: {
-    path: getRouteArticlesCreate(),
+    path: getRouteArticleCreate(),
     element: <ArticleEditPage />,
     authOnly: true,
   },
   [AppRoutes.ARTICLE_EDIT]: {
-    path: getRouteArticlesEdit(":id"),
+    path: getRouteArticleEdit(":id"),
     element: <ArticleEditPage />,
     authOnly: true,
   },
