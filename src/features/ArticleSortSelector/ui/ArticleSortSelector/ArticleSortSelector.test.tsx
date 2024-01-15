@@ -25,7 +25,6 @@ describe("ArticleSortSelector", () => {
             />
         );
 
-        // Assert that the component is rendered
         expect(screen.getByLabelText("Сортировать ПО")).toBeInTheDocument();
         expect(screen.getByLabelText("по")).toBeInTheDocument();
     });
@@ -46,7 +45,6 @@ describe("ArticleSortSelector", () => {
             target: { value: "title" },
         });
 
-        // Assert that onChangeSort is called with the correct value
         expect(onChangeSortMock).toHaveBeenCalledWith("title");
     });
 
