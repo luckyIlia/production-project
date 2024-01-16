@@ -5,6 +5,7 @@ import { CommentCard } from './CommentCard';
 
 describe('CommentCard component', () => {
     const mockComment = {
+        id: '1',
         user: {
             id: '1',
             username: 'testuser',
