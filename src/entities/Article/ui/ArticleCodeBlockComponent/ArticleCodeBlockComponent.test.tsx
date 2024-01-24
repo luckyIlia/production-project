@@ -4,10 +4,6 @@ import { ArticleCodeBlockComponent } from "./ArticleCodeBlockComponent";
 import { ArticleBlockType } from '../..';
 import { ArticleCodeBlock } from '../../model/types/article';
 
-jest.mock("react-i18next", () => ({
-    useTranslation: () => ({ t: key => key }),
-}));
-
 describe("ArticleCodeBlockComponent", () => {
     test("renders without crashing", () => {
         const block: ArticleCodeBlock  = {
@@ -21,7 +17,9 @@ describe("ArticleCodeBlockComponent", () => {
     });
 
     test("renders code block correctly", () => {
-        const block = {
+        const block: ArticleCodeBlock = {
+            type: ArticleBlockType.CODE,
+            id: "1",
             code: "console.log('Testing ArticleCodeBlockComponent');",
         };
 
@@ -30,7 +28,9 @@ describe("ArticleCodeBlockComponent", () => {
     });
 
     test("applies custom className correctly", () => {
-        const block = {
+        const block: ArticleCodeBlock  = {
+            type: ArticleBlockType.CODE,
+            id: "1",
             code: "console.log('Custom Class Test');",
         };
         const customClassName = "custom-class";
