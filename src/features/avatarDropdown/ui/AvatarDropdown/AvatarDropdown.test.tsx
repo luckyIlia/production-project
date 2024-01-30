@@ -1,7 +1,7 @@
 import React from 'react';
 import { fireEvent, render } from '@testing-library/react';
 import '@testing-library/jest-dom/extend-expect';
-import { AvatarDropdown } from './ui/AvatarDropdown/AvatarDropdown';
+import { AvatarDropdown } from './AvatarDropdown';
 
 describe('AvatarDropdown', () => {
     test('renders profile and logout items', () => {
