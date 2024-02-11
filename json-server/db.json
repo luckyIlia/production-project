@@ -585,6 +585,10 @@
       "roles": [
         "ADMIN"
       ],
+      "features": {
+        "isArticleRatingEnabled": true,
+        "isCounterEnabled": true
+      },
       "avatar": "https://pic.onlinewebfonts.com/svg/img_569204.png"
     },
     {
@@ -594,6 +598,10 @@
       "roles": [
         "USER"
       ],
+      "features": {
+        "isArticleRatingEnabled": false,
+        "isCounterEnabled": false
+      },
       "avatar": "https://pic.onlinewebfonts.com/svg/img_569204.png"
     },
     {
@@ -603,6 +611,10 @@
       "roles": [
         "MANAGER"
       ],
+      "features": {
+        "isArticleRatingEnabled": false,
+        "isCounterEnabled": true
+      },
       "avatar": "https://pic.onlinewebfonts.com/svg/img_569204.png"
     },
     {
@@ -612,6 +624,10 @@
       "roles": [
         "ADMIN"
       ],
+      "features": {
+        "isArticleRatingEnabled": true,
+        "isCounterEnabled": false
+      },
       "avatar": "https://pic.onlinewebfonts.com/svg/img_569204.png"
     }
   ],
